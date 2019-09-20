@@ -1,0 +1,71 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 8/17/19 6:35 PM
+Description: Exception in server tick loop
+
+Missing Mods:
+	TravellersGear : [1.16.4,)
+
+cpw.mods.fml.common.MissingModsException
+	at cpw.mods.fml.common.Loader.sortModList(Loader.java:243)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:493)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:87)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:320)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:176)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Thermos Version: cyberdynecc:Thermos:1.7.10-1614.58
+	Plugins: ~~ERROR~~ NullPointerException: null
+	Disabled Plugins: ~~ERROR~~ NullPointerException: null
+	Operating System: Linux (amd64) version 4.15.0-54-generic
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 918459312 bytes (875 MB) / 1065025536 bytes (1015 MB) up to 2138767360 bytes (2039 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx2G -Xms1G
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 31 mods loaded, 31 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	U	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	U	FML{7.10.99.99} [Forge Mod Loader] (Thermos-1.7.10-1614-server.jar) 
+	U	Forge{10.13.4.1614} [Minecraft Forge] (Thermos-1.7.10-1614-server.jar) 
+	U	kimagine{0.2} [KImagine] (minecraft.jar) 
+	U	CodeChickenCore{1.0.7.47} [CodeChicken Core] (minecraft.jar) 
+	U	NotEnoughItems{1.0.5.120} [Not Enough Items] ([1.7.10]-物品管理器-NotEnoughItems-v1.0.5.120_universal.jar) 
+	U	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) 
+	U	WitchingGadgetsCore{1.1.10} [Witching Gadgets Core] (minecraft.jar) 
+	U	NEIAddons{1.12.14.40} [NEI Addons] ([1.7.10]-NEI扩展-NEIAddons-v1.12.14.40.jar) 
+	U	NEIAddons|Developer{1.12.14.40} [NEI Addons: Developer Tools] ([1.7.10]-NEI扩展-NEIAddons-v1.12.14.40.jar) 
+	U	NEIAddons|AppEng{1.12.14.40} [NEI Addons: Applied Energistics 2] ([1.7.10]-NEI扩展-NEIAddons-v1.12.14.40.jar) 
+	U	NEIAddons|Botany{1.12.14.40} [NEI Addons: Botany] ([1.7.10]-NEI扩展-NEIAddons-v1.12.14.40.jar) 
+	U	NEIAddons|Forestry{1.12.14.40} [NEI Addons: Forestry] ([1.7.10]-NEI扩展-NEIAddons-v1.12.14.40.jar) 
+	U	NEIAddons|CraftingTables{1.12.14.40} [NEI Addons: Crafting Tables] ([1.7.10]-NEI扩展-NEIAddons-v1.12.14.40.jar) 
+	U	NEIAddons|ExNihilo{1.12.14.40} [NEI Addons: Ex Nihilo] ([1.7.10]-NEI扩展-NEIAddons-v1.12.14.40.jar) 
+	U	neiintegration{1.1.1} [NEI Integration] ([1.7.10]-NEI扩展-NEIIntegration-v1.1.1.jar) 
+	U	primitivemobs{1.0} [Primitive Mobs] ([1.7.10]-原始的生物-Primitivemobs-v1.0b.jar) 
+	U	cfm{3.4.7} [�9MrCrayfish's Furniture Mod] ([1.7.10]-家具-MrCrayfishFurniture-v3.4.7(汉化).jar) 
+	U	TaintedMagic{1.1.5.7} [Tainted Magic] ([1.7.10]-污秽魔法-TaintedMagic-1.1.5.7.jar) 
+	U	InfusionBrewing{1.7.10-1.1} [InfusionBrewing] ([1.7.10]-注魔酿造-Mariri.jar) 
+	U	inventorytweaks{1.57-116} [Inventory Tweaks] ([1.7.10]-物品整理-InventoryTweaks-v1.57_116.jar) 
+	U	thaumicbases{1.3.1710.2} [Thaumic Bases] ([1.7.10]-神秘基础学-ThaumicBases-v1.3_3.jar) 
+	U	DummyCore{1.13} [DummyCore] ([1.7.10]-神秘基础学前置-DummyCore-v1.13.jar) 
+	U	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] ([1.7.10]-神秘工匠-ThaumicTinkerer-v2.5_507.jar) 
+	U	Thaumcraft{4.2.3.5} [Thaumcraft] ([1.7.10]-神秘时代4-Thaumcraft4-v2.3.5.jar) 
+	U	ForbiddenMagic{1.7.10-0.562} [Forbidden Magic] ([1.7.10]-禁忌魔法-ForbiddenMagic-v0.562.jar) 
+	U	Backpack{2.0.0} [Backpack] ([1.7.10]-背包-BackPacks.jar) 
+	U	NodalMechanics{1.7.10R1.0} [NodalMechanics] ([1.7.10]-节点学-Nodes.jar) 
+	U	AWWayofTime{v1.3.3} [Blood Magic: Alchemical Wizardry] ([1.7.10]-血魔法-BloodMagic-v1.3.3_17.jar) 
+	U	WitchingGadgets{1.1.10} [Witching Gadgets] (WitchingGadgets-1.7.10-1.1.10.jar) 
+	U	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'thermos,cauldron,craftbukkit,mcpc,kcauldron,fml,forge'
+	Type: Dedicated Server (map_server.txt)

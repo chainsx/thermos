@@ -1,0 +1,47 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 8/17/19 5:51 PM
+Description: Exception in server tick loop
+
+Missing Mods:
+	Thaumcraft : [4.2.3.5,)
+
+cpw.mods.fml.common.MissingModsException
+	at cpw.mods.fml.common.Loader.sortModList(Loader.java:243)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:493)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:87)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:320)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:176)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Thermos Version: cyberdynecc:Thermos:1.7.10-1614.58
+	Plugins: ~~ERROR~~ NullPointerException: null
+	Disabled Plugins: ~~ERROR~~ NullPointerException: null
+	Operating System: Linux (amd64) version 4.15.0-54-generic
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 932069944 bytes (888 MB) / 1065025536 bytes (1015 MB) up to 2138767360 bytes (2039 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx2G -Xms1G
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	U	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	U	FML{7.10.99.99} [Forge Mod Loader] (Thermos-1.7.10-1614-server.jar) 
+	U	Forge{10.13.4.1614} [Minecraft Forge] (Thermos-1.7.10-1614-server.jar) 
+	U	kimagine{0.2} [KImagine] (minecraft.jar) 
+	U	thaumicbases{1.3.1710.2} [Thaumic Bases] ([1.7.10]-神秘基础学-ThaumicBases-v1.3_3.jar) 
+	U	DummyCore{1.13} [DummyCore] ([1.7.10]-神秘基础学前置-DummyCore-v1.13.jar) 
+	U	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'thermos,cauldron,craftbukkit,mcpc,kcauldron,fml,forge'
+	Type: Dedicated Server (map_server.txt)
